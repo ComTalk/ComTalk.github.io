@@ -1,6 +1,7 @@
 ---
 layout: single  
 title: "[따라하는 함수형 프로그래밍] 프로그래밍 패러다임"
+categories: "Functional_Programming"
 author: ksron
 toc: true
 toc_sticky: true
@@ -177,14 +178,14 @@ word_list = string_lower_case.split()
 
 이제 각 기능을 간단히 구현할 수 있다.
 
-##### 1) 문단 내의 단어 세기
+#### 1) 문단 내의 단어 세기
 
 ```python
 word_list_length = len(word_list)
 print("Total words:", word_list_length)
 ```
 
-##### 2) 특정 단어의 반복 횟수 세기
+#### 2) 특정 단어의 반복 횟수 세기
 
 "have" 단어 수를 출력한다.
 
@@ -199,7 +200,7 @@ for word in word_list:
 print('Number of occurances of word match:', word_match_counter)
 ```
 
-##### 3) 특정 문자로 시작하는 단어와 매치되는 단어의 수 세기
+#### 3) 특정 문자로 시작하는 단어와 매치되는 단어의 수 세기
 
 't'로 시작하는 단어를 출력한다.
 

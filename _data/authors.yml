@@ -16,7 +16,7 @@ hanwool:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"
-      url: "mailto:kasrlmoojoo@gmail.com"
+      url: "https://www.linkedin.com/in/hanwool-park/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/sky4689524/"

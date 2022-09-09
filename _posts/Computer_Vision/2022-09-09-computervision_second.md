@@ -266,6 +266,4 @@ show()
 </div>
 <br/>
 
-이번 시간은 파이썬 라이브러리 PIL 과 Matplotlib의 함수들에 대해서 간단히 소개 하는 시간을 가졌습니다. 다음 포스팅에서는 NumPy 와 SciPy 에 대해서 알아보도록 하겠습니다.
-
-> Written with [StackEdit](https://stackedit.io/).
+이번 시간에는 파이썬 라이브러리 PIL 과 Matplotlib의 함수들에 대해서 간단히 소개 하는 시간을 가졌습니다. 다음 포스팅에서는 NumPy 와 SciPy 에 대해서 알아보도록 하겠습니다.

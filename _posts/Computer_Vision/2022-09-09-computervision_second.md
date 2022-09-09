@@ -70,14 +70,14 @@ def get_imlist(path):
     return [os.path.join(path,f) for f in os.listdir(path) if f.endswith('.jpg')]
 ```
 
-### 썸네일 생성
+#### 썸네일 생성
 
 PIL은 썸네일 생성도 가능하게 합니다. thumbnail() 함수를 사용하여 썸네일을 생성할 수 있는데, tuple을 활용하여 썸네일 사이즈를 조절할 수 있습니다.
 ```python
 pil_im.thumbnail((128,128))
 ```
 
-### 이미지 영역 복사 및 붙여넣기
+#### 이미지 영역 복사 및 붙여넣기
 
 crop() 함수를 이용해서 이미지의 한 영역을 잘라낼 수 있습니다:
 
@@ -93,7 +93,7 @@ region = region.transpose(Image.ROTATE_180)
 pil_im.paste(region,box)
 ```
 
-### 크기 조절 및 회전
+#### 크기 조절 및 회전
 
 resize() 함수에 새로운 사이즈 tuple 값을 제공함으로써 크기를 조절할 수 있습니다:
 

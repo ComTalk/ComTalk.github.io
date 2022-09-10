@@ -7,15 +7,15 @@ toc: true
 toc_sticky: true
 ---
 
-이번 시간에는 컴퓨터 비전을 파이썬 프로그래밍으로 배우는 시간을 가지려고 합니다.  이 포스트의 주요 내용은  [Programming Computer Vision with Python](http://programmingcomputervision.com/) 책을 번역 및 참고하였습니다. 이 책은 총 10장 으로 이루어져있으며, 컴퓨터 비전의 주요 이론 및 알고리즘을 공부하기 좋은 책입니다. 
+이번 시간에는 컴퓨터 비전을 파이썬 프로그래밍으로 배우는 시간을 가지려고 합니다.  이 포스트의 주요 내용은  [Programming Computer Vision with Python](http://programmingcomputervision.com/) 책을 번역 및 참고하여 작성했습니다. 이 책은 총 10장 으로 이루어져있으며, 컴퓨터 비전의 주요 이론 및 알고리즘을 공부하기 좋은 책입니다. 
 
 그럼 들어가기에 앞서, 기본적으로 이 책은 파이썬으로 프로그래밍을 하기 때문에 Python 2.6+ 버전 이상이 설치 되어 있어야 하며, 추가적으로 각 장마다 새로운 파이썬 모듈을 사용한다는 사실을 알고 계시길 바랍니다. 핵심 모듈은 [NumPy](http://numpy.scipy.org/) 와 [Matplotlib](http://matplotlib.sourceforge.net/) 이며, 추가적으로 [SciPy](http://scipy.org/) 을 사용하기도 합니다. 저는 이 포스팅에서 Python 3.7 버전을 사용하였습니다.
 
-그럼 지금부터 1 장을 같이 배우도록 하겠습니다.
+그럼 지금부터 1 장을 같이 배워 보도록 하겠습니다.
 
 ## Chapter 1. Basic Image Handling and Processing
 
-1장은 기본적으로 이미지를 어떻게 처리하는지에 대해서 소개합니다. 이 장에서는 간단하게 이미지를 처리하기 위해서 어떤 파이썬 패키지를 사용하는지 대해서 소개합니다. 그 뿐 아니라, 이미지를 읽고, 전환 및 수정, 그리고 출력 하는 방법등에 대해서도 소개합니다. 
+1장은 기본적으로 이미지를 처리하는 다양한 방법에 대해서 소개합니다. 그리고 이 장에서는 간단하게 이미지를 처리하기 위해서 어떤 파이썬 패키지를 사용하는지 대해서 소개합니다. 그 뿐 아니라, 이미지를 읽고, 전환 및 수정, 그리고 출력 하는 방법등에 대해서도 소개합니다. 
 
 ### 1.1 PIL - The Python Imaging Library
 
@@ -119,7 +119,7 @@ out = pil_im.rotate(45)
 
 ### 1.2 Matplotlib
 
-Matplotlib 은 수학 공식, 그래프 도표화 및 이미지에 점, 선 및 곡선을 그리기에 PIL 보다 훨씬 적합한 그래픽 라이브버리라고 할 수 있습니다. Matplotlib은 이 책의 고화질의 그림들에 이용되었습니다. 그리고 Matplotlib 의 PyLab 인터페이스는 사용자에게 다양한 함수들을 제공하여 plots을 만들수 있게 해줍니다. Matplotlib 은 오픈소스로 [https://matplotlib.org/](https://matplotlib.org/) 에 자세한 설명이 되어있습니다. 이 책에서는 간단한 예시를 통해서 어떤 함수들이 주로 사용되는지 보여드리겠습니다.
+Matplotlib 은 수학 공식, 그래프 도표화 및 이미지에 점, 선 및 곡선을 그리기에 PIL 보다 훨씬 적합한 그래픽 라이브버리라고 할 수 있습니다. Matplotlib은 이 책의 고화질의 그림들에 이용되었습니다. 그리고 Matplotlib 의 PyLab 인터페이스는 사용자에게 다양한 함수들을 제공하여 plots을 만들수 있게 해줍니다. Matplotlib 은 오픈소스로 [https://matplotlib.org/](https://matplotlib.org/) 에서 자세한 설명이 되어있습니다. 이 책에서는 간단한 예시를 통해서 어떤 함수들이 주로 사용되는지 보여드리겠습니다.
 
 #### 이미지, 점 및 선 도표화
 

@@ -85,7 +85,7 @@ print(int(im.min()), int(im.max()))
 
 <br/>
 <div align="center">
-<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/python_example_1_1.png" width="700">
+<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/third/python_example_1_1.png" width="700">
 <br/>
 <font size="3"> 그림 1-1. 그레이스케일 변형 예시. 원본은 점선으로 표현하였습니다. </font>
 </div>
@@ -94,7 +94,7 @@ print(int(im.min()), int(im.max()))
 
 <br/>
 <div align="center">
-<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/python_example_1_1.png" width="700">
+<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/third/python_example_1_2.png" width="700">
 <br/>
 <font size="3"> 그림 1-2. 그레이스케일 변형 결과 이미지. 첫번째 그림은 이미지 도치. 두번째 그림은 이미지를 특정 값 100-200 사이로 고정. 세번째 그림은 이차 변형 결과 이미지.</font>
 </div>
@@ -159,7 +159,7 @@ im2,cdf = imtools.histeq(im)
 
 <br/>
 <div align="center">
-<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/python_example_1_1.png" width="700">
+<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/third/python_example_1_3.png" width="700">
 <br/>
 <font size="3"> 그림 1-3. 히스토그램 균일화 예시. 왼쪽은 원본이미지와 히스토그램. 중앙은 그레이스케일 변형 함수 도표. 오른쪽 그림은 히스토그램 균일화 후 이미지와 히스토그램</font>
 </div>
@@ -168,7 +168,7 @@ im2,cdf = imtools.histeq(im)
 
 <br/>
 <div align="center">
-<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/python_example_1_1.png" width="700">
+<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/third/python_example_1_4.png" width="700">
 <br/>
 <font size="3"> 그림 1-4. 히스토그램 균일화 예시. 왼쪽은 원본이미지와 히스토그램. 중앙은 그레이스케일 변형 함수 도표. 오른쪽 그림은 히스토그램 균일화 후 이미지와 히스토그램</font>
 </div>
@@ -264,7 +264,7 @@ show()
 
 <br/>
 <div align="center">
-<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/python_example_1_1.png" width="700">
+<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/third/python_example_1_5.png" width="700">
 <br/>
 <font size="3"> 그림 1-5. 평균 이미지(왼쪽 위) 와 처음 7가지 모드; 즉 편동이 가장 많은 방향들을 표현</font>
 </div>

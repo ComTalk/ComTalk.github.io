@@ -85,7 +85,7 @@ print(int(im.min()), int(im.max()))
 
 <br/>
 <div align="center">
-<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/third/python_example_1_1.png" width="700">
+<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/python_example_1_1.png" width="700">
 <br/>
 <font size="3"> 그림 1-1. 그레이스케일 변형 예시. 원본은 점선으로 표현하였습니다. </font>
 </div>
@@ -94,7 +94,7 @@ print(int(im.min()), int(im.max()))
 
 <br/>
 <div align="center">
-<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/third/python_example_1_2.png" width="700">
+<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/python_example_1_1.png" width="700">
 <br/>
 <font size="3"> 그림 1-2. 그레이스케일 변형 결과 이미지. 첫번째 그림은 이미지 도치. 두번째 그림은 이미지를 특정 값 100-200 사이로 고정. 세번째 그림은 이차 변형 결과 이미지.</font>
 </div>
@@ -159,7 +159,7 @@ im2,cdf = imtools.histeq(im)
 
 <br/>
 <div align="center">
-<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/third/python_example_1_3.png" width="700">
+<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/python_example_1_1.png" width="700">
 <br/>
 <font size="3"> 그림 1-3. 히스토그램 균일화 예시. 왼쪽은 원본이미지와 히스토그램. 중앙은 그레이스케일 변형 함수 도표. 오른쪽 그림은 히스토그램 균일화 후 이미지와 히스토그램</font>
 </div>
@@ -168,7 +168,7 @@ im2,cdf = imtools.histeq(im)
 
 <br/>
 <div align="center">
-<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/third/python_example_1_4.png" width="700">
+<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/python_example_1_1.png" width="700">
 <br/>
 <font size="3"> 그림 1-4. 히스토그램 균일화 예시. 왼쪽은 원본이미지와 히스토그램. 중앙은 그레이스케일 변형 함수 도표. 오른쪽 그림은 히스토그램 균일화 후 이미지와 히스토그램</font>
 </div>
@@ -222,7 +222,7 @@ def pca(X):
 
 이 함수는 먼저 각 차원의 평균을 빼서 데이터의 중심을 잡습니다. 그런 다음 간결한 방법 또는 SVD를 사용하여 공분산 매트릭스의 가장 큰 고유 값에 해당하는 고유 벡터를 계산합니다. 그런 다음 우리는 Integer 값 n을 취하고 Integer 값 0 에서 (n – 1)의 List를 반환하는 **range()** 함수를 사용했습니다. 대체 함수로 Array를 제공하는 **arange()** 함수나 제너레이터(향상된 속도를 제공)를 제공하는 **xrange()** 함수를 사용하셔도 됩니다. 이 책에서는 **range()** 함수를 주로 사용할 것입니다.
 
-데이터 포인트 수가 벡터의 차원보다 작을 경우, (작은) 공분산 매트릭스 $XX^T$ 의 고유 벡터를 계산하는 방식으로 SVD 대신에 좀 전에 설명했던 간결한 방법을 사용할 것입니다.  또한, k 개의 가장 큰 고유 값(k는 원하는 차원의 수)에 해당하는 고유 벡터만 계산하여 훨씬 더 빠르게 만드는 방법도 있습니다. 이러한 방법들은 이 책의 범위를 넘어서기 때문에, 따로 다루지는 않겠습니다. 매트릭스 V의 행은 직교하고, 학습 데이터의 내림차순의 좌표 방향을 포함합니다.
+데이터 포인트 수가 벡터의 차원보다 작을 경우, (작은) 공분산 매트릭스  <img src="https://latex.codecogs.com/svg.image?XX^{T}" title="https://latex.codecogs.com/svg.image?XX^{T}" /> 의 고유 벡터를 계산하는 방식으로 SVD 대신에 좀 전에 설명했던 간결한 방법을 사용할 것입니다.  또한, k 개의 가장 큰 고유 값(k는 원하는 차원의 수)에 해당하는 고유 벡터만 계산하여 훨씬 더 빠르게 만드는 방법도 있습니다. 이러한 방법들은 이 책의 범위를 넘어서기 때문에, 따로 다루지는 않겠습니다. 매트릭스 V의 행은 직교하고, 학습 데이터의 내림차순의 좌표 방향을 포함합니다.
 
 글꼴 이미지를 이용해 이 방법을 사용해 보겠습니다. 파일 "fontimages.zip"은다양한 글꼴로 인쇄된 다음 스캔된 문자 "a"의  작은 썸네일 이미지가 포함되어 있습니다. 2,359개의 글꼴은 무료로 제공된 글꼴 모음으로부터 나온 것입니다. 이러한 이미지의 파일 이름들이 List(imlist) 에 저장되어 있다고 가정하고, 이전에 사용했던 코드(pca.py)를 통해 주요 구성 요소들을 다음과 같이 계산하고 표현할 수 있습니다:
 
@@ -264,7 +264,7 @@ show()
 
 <br/>
 <div align="center">
-<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/third/python_example_1_5.png" width="700">
+<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/python_example_1_1.png" width="700">
 <br/>
 <font size="3"> 그림 1-5. 평균 이미지(왼쪽 위) 와 처음 7가지 모드; 즉 편동이 가장 많은 방향들을 표현</font>
 </div>
@@ -272,7 +272,7 @@ show()
 <br/>
 
 
-여기서 fontimages 는 data 폴더에 저장되어 있다고 가정하겠습니다.  먼저 reshape() 함수를 사용하여 이미지를 1차원에서 원본 차원으로 변환하여야 합니다. 예시 코드를 실행하면, 그림 1-5와 같이 하나의 창에 8개의 이미지가 표시 됩니다. PyLab의 subplot() 함수를 통해 하나의 창에 여러 개의 이미지를 배치했습니다.
+여기서 fontimages 는 data 폴더에 저장되어 있다고 가정하겠습니다.  먼저 **reshape()** 함수를 사용하여 이미지를 1차원에서 원본 차원으로 변환하여야 합니다. 예시 코드를 실행하면, 그림 1-5와 같이 하나의 창에 8개의 이미지가 표시 됩니다. PyLab의 **subplot()** 함수를 통해 하나의 창에 여러 개의 이미지를 배치했습니다.
 
 #### Pickle 모듈 사용
 

@@ -107,7 +107,7 @@ out = pil_im.rotate(45)
 
 <br/>
 <div align="center">
-<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/python_example_1_1.png" width="700">
+<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/second/python_example_1_1.png" width="700">
 <br/>
 <font size="3"> 그림 1-1. PIL을 이용한 이미지 처리 예시들 </font>
 </div>
@@ -160,7 +160,7 @@ axis('off')
 
 <br/>
 <div align="center">
-<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/python_example_1_2.png" width="700">
+<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/second/python_example_1_2.png" width="700">
 <br/>
 <font size="3"> 그림 1-2. Matplotlib 을 이용한 도표 예시들 </font>
 </div>
@@ -232,7 +232,7 @@ hist() 함수의 두 번째 인자는 빈의 갯수를 나타냅니다. 기억�
 
 <br/>
 <div align="center">
-<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/python_example_1_3.png" width="700">
+<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/second/python_example_1_3.png" width="700">
 <br/>
 <font size="3"> 그림 1-3.  Matplotlib을 이용한 이미지 윤곽선 및 히스토그램 시각화 </font>
 </div>
@@ -260,7 +260,7 @@ show()
 
 <br/>
 <div align="center">
-<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/python_example_1_4.png" width="700">
+<img src="https://github.com/ComTalk/ComTalk.github.io/raw/master/assets/images/Computer_Vision/second/python_example_1_4.png" width="700">
 <br/>
 <font size="3"> 그림 1-4.  PyLab을 이용한 상호적 주석달기</font>
 </div>

@@ -3,6 +3,7 @@ layout: single
 title: 자연어 처리를 위한 신경망 (1) - 순전파
 categories: "Neural_Net"
 use_math: true  
+author: goeon
 toc: true
 tock-sticky: true
 ---

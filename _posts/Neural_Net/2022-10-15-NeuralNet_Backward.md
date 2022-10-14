@@ -39,14 +39,6 @@ y = np.exp(x)
 plt.plot(x, y)
 ```
 
-
-
-
-    [<matplotlib.lines.Line2D at 0x7ff5dbc30ac0>]
-
-
-
-
     
 <img src="https://github.com/ComTalk/ComTalk.github.io/blob/master/assets/images/nlp_image/exponential_func.png?raw=true" width="35%" height="35%">
     

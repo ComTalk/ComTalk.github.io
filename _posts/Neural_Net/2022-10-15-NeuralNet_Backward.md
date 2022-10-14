@@ -48,7 +48,7 @@ plt.plot(x, y)
 
 
     
-![png](output_11_1.png)
+<img src="https://github.com/ComTalk/ComTalk.github.io/blob/master/assets/images/nlp_image/exponential_func.png?raw=true" width="35%" height="35%">
     
 
 
@@ -82,7 +82,7 @@ plt.grid()
 
 
     
-![png](output_21_0.png)
+<img src="https://github.com/ComTalk/ComTalk.github.io/blob/master/assets/images/nlp_image/derivative.png?raw=true" width="35%" height="35%">
     
 
 

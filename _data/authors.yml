@@ -20,3 +20,14 @@ hanwool:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/sky4689524/"
+goeon:
+  name : "Goeon Park"
+  bio  : "Data Scientist"
+  avatar : "/assets/images/bio-goeon-avatar.jpeg"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://www.linkedin.com/in/goeon-park/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/GOEON"

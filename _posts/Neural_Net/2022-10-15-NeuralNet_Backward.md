@@ -1,4 +1,12 @@
-# 자연어 처리를 위한 신경망 (2) - 역전파
+---
+layout: single  
+title: 자연어 처리를 위한 신경망 (2) - 역전파
+categories: "Neural_Net"
+use_math: true  
+author: goeon
+toc: true
+tock-sticky: true
+---
 
 지난 시간에는 신경망이 어떻게 예측하는지 `순전파`를 통해 알아보았습니다. 이번 시간에는 `순전파`를 바탕으로 어떻게 신경망이 학습하는지(가중치를 업데이트 하는지) 알아보겠습니다. 가장 중요한 개념이라고 할 수 있는 `경사하강법(gradient descent)`에 알아보겠습니다. `역전파`는 **미분이 다했다** 라고도 할 수 있을 것 같은데요. 이번 시간을 통해 정확하게 이해해보셨으면 좋겠습니다. 그럼 시작해보죠. 이번 포스팅도 [밑바닥부터 시작하는 딥러닝2](https://www.hanbit.co.kr/store/books/look.php?p_code=B8950212853)를 참조하여 작성 되었습니다.  
 

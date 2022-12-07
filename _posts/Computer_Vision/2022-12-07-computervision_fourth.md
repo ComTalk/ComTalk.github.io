@@ -11,11 +11,11 @@ toc_sticky: true
 
 이번 시간에는 저번시간에 이어서 1장의 컴퓨터비전의 중요한 파이썬 라이브러리인 SciPy에 대해서 알아보도록 하겠습니다.
 
-[<b>SciPy</b>](https://scipy.org/) 는 <b>NumPy</b>를 기반으로 하는 수학을 위한 오픈 소스 패키지 입니다. 그리고 수치 통합, 최적화, 통계, 신호 처리, 그리고 우리에게 가장 중요한 이미지 처리등을 포함한 많은 작업에 대한 효율적인 루틴을 제공합니다. 이후 많은 예제를 통해서 <b>SciPy</b>의 많은 유용한 모듈들을 보여드리겠습니다. <b>SciPy</b>는 무료로 이 곳에서 http://scipy.org/Download 다운로드 가능합니다.
+[<b>SciPy</b>](https://scipy.org/) 는 <b>NumPy</b>를 기반으로 하는 수학을 위한 오픈 소스 패키지 입니다. 그리고 수치 통합, 최적화, 통계, 신호 처리, 그리고 우리에게 가장 중요한 이미지 처리등을 포함한 많은 작업에 대한 효율적인 루틴을 제공합니다. 이후 많은 예제를 통해서 <b>SciPy</b>의 많은 유용한 모듈들을 보여드리겠습니다. <b>SciPy</b>는 무료로 이 곳에서 [http://scipy.org/Download](http://scipy.org/Download) 다운로드 가능합니다.
 
 #### 이미지 블러링
 
-이미지 컨볼루션의 고전적이고 매우 유용한 예는 이미지의 가우스 블러링 입니다. 본질적으로, (그레이스케일) 이미지 <img src="https://latex.codecogs.com/svg.image?I" title="https://latex.codecogs.com/svg.image?I" />는 블러링 버전인 <img src="https://latex.codecogs.com/svg.image?I_{\sigma&space;}&space;=&space;I&space;*&space;G_{\sigma}" title="https://latex.codecogs.com/svg.image?I_{\sigma } = I * G_{\sigma}" /> 을 만들기 위해 가우스 커널과 컨볼루션 됩니다. 여기서 *는 컨볼루션을 나타내며 $G_\sigma$  표준 편차 $\sigma$ 로 정의된 가우스 2D 커널입니다.
+이미지 컨볼루션의 고전적이고 매우 유용한 예는 이미지의 가우스 블러링 입니다. 본질적으로, (그레이스케일) 이미지 <img src="https://latex.codecogs.com/svg.image?I" title="https://latex.codecogs.com/svg.image?I" />는 블러링 버전인 <img src="https://latex.codecogs.com/svg.image?I_{\sigma&space;}&space;=&space;I&space;*&space;G_{\sigma}" title="https://latex.codecogs.com/svg.image?I_{\sigma } = I * G_{\sigma}" /> 을 만들기 위해 가우스 커널과 컨볼루션 됩니다. 여기서 *는 컨볼루션을 나타내며 <img src="https://latex.codecogs.com/svg.image?G_{\sigma&space;}" title="https://latex.codecogs.com/svg.image?G_{\sigma }" />  표준 편차 <img src="https://latex.codecogs.com/svg.image?\sigma&space;" title="https://latex.codecogs.com/svg.image?\sigma " /> 로 정의된 가우스 2D 커널입니다.
 
 <div align="center">
 <img src="https://latex.codecogs.com/svg.image?G_{\sigma}&space;=&space;\tfrac{1}{2\pi&space;\sigma}e^{-(x^2&space;&plus;&space;y^2)/2\sigma^2}" title="https://latex.codecogs.com/svg.image?G_{\sigma} = \tfrac{1}{2\pi \sigma}e^{-(x^2 + y^2)/2\sigma^2}" />
@@ -34,7 +34,7 @@ im2 = filters.gaussian_filter(im,5)
 
 <b>gaussian_filter()</b> 함수의 마지막 매개 변수는 표전 편차입니다.
 
-그림 1-1을 보시면 $\sigma$ 가 증가함에 따라 이미지의 블러링이 더 강해진다는 것을 볼 수 있습니다.  값이 클수록 자세한 내용은 표시되지 않습니다. 컬러 영상을 블러링하려면, 각 컬러 채널에 가우스 블러링을 적용하기만 하면 됩니다:
+그림 1-1을 보시면 <img src="https://latex.codecogs.com/svg.image?\sigma&space;" title="https://latex.codecogs.com/svg.image?\sigma " /> 가 증가함에 따라 이미지의 블러링이 더 강해진다는 것을 볼 수 있습니다.  값이 클수록 자세한 내용은 표시되지 않습니다. 컬러 영상을 블러링하려면, 각 컬러 채널에 가우스 블러링을 적용하기만 하면 됩니다:
 
 ```python
 from PIL import Image
@@ -65,7 +65,7 @@ im2 = array(im2, 'unit8')
 
 <br/>
 
-이 모듈의 사용과 다양한 매개 변수 선택에 대한 자세한 내용은 http://docs.scipy.org/doc/scipy/reference/ndimage.html 에서 <b>scipy.ndimage</b>의 <b>SciPy</b>의 문서를 참고하시면 됩니다.
+이 모듈의 사용과 다양한 매개 변수 선택에 대한 자세한 내용은 [http://docs.scipy.org/doc/scipy/reference/ndimage.html](http://docs.scipy.org/doc/scipy/reference/ndimage.html) 에서 <b>scipy.ndimage</b>의 <b>SciPy</b>의 문서를 참고하시면 됩니다.
 
 #### 이미지 도함수
 
@@ -124,7 +124,7 @@ magnitude = sqrt(imx**2+imy**2)
 <img src="https://latex.codecogs.com/svg.image?I_{x}&space;=&space;I&space;*&space;G_{\sigma&space;x}" title="https://latex.codecogs.com/svg.image?I_{x} = I * G_{\sigma x}" /> 그리고 <img src="https://latex.codecogs.com/svg.image?I_{y}&space;=&space;I&space;*&space;G_{\sigma&space;y}" title="https://latex.codecogs.com/svg.image?I_{y} = I * G_{\sigma y}" />,
 </div>
 
-여기서 <img src="https://latex.codecogs.com/svg.image?G_{\sigma&space;x}" title="https://latex.codecogs.com/svg.image?G_{\sigma x}" /> 와 <img src="https://latex.codecogs.com/svg.image?G_{\sigma&space;y}" title="https://latex.codecogs.com/svg.image?G_{\sigma y}" />는 표준 편차 $\Theta$ 를 갖는 가우스 함수인 <img src="https://latex.codecogs.com/svg.image?G_{\sigma}" title="https://latex.codecogs.com/svg.image?G_{\sigma}" />의  x와 y 도함수 값입니다. 
+여기서 <img src="https://latex.codecogs.com/svg.image?G_{\sigma&space;x}" title="https://latex.codecogs.com/svg.image?G_{\sigma x}" /> 와 <img src="https://latex.codecogs.com/svg.image?G_{\sigma&space;y}" title="https://latex.codecogs.com/svg.image?G_{\sigma y}" />는 표준 편차 <img src="https://latex.codecogs.com/svg.image?\theta&space;" title="https://latex.codecogs.com/svg.image?\theta " /> 를 갖는 가우스 함수인 <img src="https://latex.codecogs.com/svg.image?G_{\sigma}" title="https://latex.codecogs.com/svg.image?G_{\sigma}" />의  x와 y 도함수 값입니다. 
 
 이전에 블러링에 사용한 <b>filters.gaussian_filter()</b> 함수는 가우스 도함수로 계산하기 위해 추가 인수를 사용할 수 있습니다. 이미지에서 이 기능을 사용하려면 아래 예시를 참고하시면 됩니다:
 
@@ -162,7 +162,7 @@ filters.gaussian_filter(im, (sigma,sigma), (1,0), imy)
 
 #### 형태학 - 객체 개수
 
-형태학(Morphology) 는 기본적인 형태를 측정하고 분석하기 위한 체계이자 이미지 처리 방법의 집합입니다. 형태학은 일반적으로 이진 이미지에 적용되지만 그레이스케일과 함께 사용할 수도 있습니다. 이진 이미지는 각 픽셀이 일반적으로 0과 1의 두 값만 취하는 이미지 입니다. 이진 이미지는 예를 들어 물체를 세거나 물체의 크기를 측정하려는 의도로 이미지에 임계값을 적용한 결과인 경우가 많습니다. 형태학의 요약은 다음 위키피디아에 잘 정리되어 있습니다.(http://en.wikipedia.org/wiki/Mathematical_morphology)
+형태학(Morphology) 는 기본적인 형태를 측정하고 분석하기 위한 체계이자 이미지 처리 방법의 집합입니다. 형태학은 일반적으로 이진 이미지에 적용되지만 그레이스케일과 함께 사용할 수도 있습니다. 이진 이미지는 각 픽셀이 일반적으로 0과 1의 두 값만 취하는 이미지 입니다. 이진 이미지는 예를 들어 물체를 세거나 물체의 크기를 측정하려는 의도로 이미지에 임계값을 적용한 결과인 경우가 많습니다. 형태학의 요약은 다음 위키피디아에 잘 정리되어 있습니다.([http://en.wikipedia.org/wiki/Mathematical_morphology](http://en.wikipedia.org/wiki/Mathematical_morphology))
 형태학전 연산은 <b>scipy.ndimage</b> 의 <b>morphology</b> 모듈 에 저장되어 있습니다. 이진 영상의 계산 및 측정 함수들은 <b>scipy.ndimage</b> 의 <b>measurements</b> 모듈에 저장되어 있습니다. 사용 방법에 대한 간단한 예를 살펴 보겠습니다.
 그림 1-4의 이진 이미지를 살펴 보겠습니다. 다음의 예시를 사용하여 해당 이미지의 객체 수를 계산할 수 있습니다:
 
@@ -187,7 +187,7 @@ labels_open, nbr_objects_open = measurements.label(im_open)
 print("Number of objects:", nbr_objects_open)
 ```
 
-<b>binary_opening()</b>의 두 번째 인수는 픽셀을 중심으로 사용할 때 사용할 이웃을 나타내는 array인 구조 요소를 지정합니다. 위의 예시의 경우에는 y 방향으로 9 픽셀 (위로 4 픽셀, 아래로 4픽셀), x 방향으로 5 픽셀을 지정했습니다. 임의의 array 를 구조 요소로 지정할 수 있습니다; 0이 아닌 요소가 인접 요소를 결정합니다. 매개 변수 반복에 따라 연산을 적용할 횟수가 결정됩니다. 이 방법을 사용하여 객체 수가 어떻게 변하는지 확인해 보세요. <b>binary_opening()</b> 을 적용한 이후의 이미지와 해달 라벨 이미지는 그림 1-4에 나와 있습니다. 예상할 수 있듯이, <b>binary_closing()</b>이라는 이름의 함수는 반대의 연산을 수행합니다. 이 함수 뿐만 아니라 <b>morphology</b> 와 <b>measurements</b> 모듈의 다른 함수들은 직접 찾아서 연습해 보시길 추천드립니다. 자세한 설명은 <b>scipy.ndimage</b> 설명서 (http://docs.scipy.org/doc/scipy/reference/ndimage.html) 에서 자세히 확인 할 수 있습니다.
+<b>binary_opening()</b>의 두 번째 인수는 픽셀을 중심으로 사용할 때 사용할 이웃을 나타내는 array인 구조 요소를 지정합니다. 위의 예시의 경우에는 y 방향으로 9 픽셀 (위로 4 픽셀, 아래로 4픽셀), x 방향으로 5 픽셀을 지정했습니다. 임의의 array 를 구조 요소로 지정할 수 있습니다; 0이 아닌 요소가 인접 요소를 결정합니다. 매개 변수 반복에 따라 연산을 적용할 횟수가 결정됩니다. 이 방법을 사용하여 객체 수가 어떻게 변하는지 확인해 보세요. <b>binary_opening()</b> 을 적용한 이후의 이미지와 해달 라벨 이미지는 그림 1-4에 나와 있습니다. 예상할 수 있듯이, <b>binary_closing()</b>이라는 이름의 함수는 반대의 연산을 수행합니다. 이 함수 뿐만 아니라 <b>morphology</b> 와 <b>measurements</b> 모듈의 다른 함수들은 직접 찾아서 연습해 보시길 추천드립니다. 자세한 설명은 <b>scipy.ndimage</b> 설명서 ([http://docs.scipy.org/doc/scipy/reference/ndimage.html](http://docs.scipy.org/doc/scipy/reference/ndimage.html)) 에서 자세히 확인 할 수 있습니다.
 
 <br/>
 
@@ -218,7 +218,7 @@ data = {}
 data['x'] = x
 scipy.io.savemat('test.mat',data)
 ```
-이 예시는 <b>MatLab</b>에서 array x 를 읽을 때, array x 의 이름이 'x' 가 되게 저장합니다. <b>scipy.io</b> 에 대한 자세한 내용은 온라인 설명서(http://docs.scipy.org/doc/scipy/reference/io.html) 에서 확인 할 수 있습니다.
+이 예시는 <b>MatLab</b>에서 array x 를 읽을 때, array x 의 이름이 'x' 가 되게 저장합니다. <b>scipy.io</b> 에 대한 자세한 내용은 온라인 설명서([http://docs.scipy.org/doc/scipy/reference/io.html](http://docs.scipy.org/doc/scipy/reference/io.html)) 에서 확인 할 수 있습니다.
 
 #### Array 를 이미지로 저장
 

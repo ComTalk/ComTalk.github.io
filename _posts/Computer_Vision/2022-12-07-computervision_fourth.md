@@ -103,7 +103,7 @@ im2 = array(im2, 'unit8')
 
 이러한 도함수 필터는 <b>scipy.ndimage.filters()</b> 모듈의 표준 컨볼루션을 이용해서 쉽게 구현할 수 있습니다. 예시는 다음과 같습니다:
 
-```Python
+```python
 from PIL import Image
 from numpy import *
 from scipy.ndimage import filters

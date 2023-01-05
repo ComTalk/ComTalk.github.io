@@ -234,3 +234,5 @@ lena = scipy.misc.lena()
 이 함수는 512x512 의 그레이 스케일 array 이미지 버전을 제공합니다.
 
 이번 시간에는 파이썬 라이브러리 <b>SciPy</b>에 대해서 간단히 소개 하는 시간을 가졌습니다. 다음 포스팅에서는 좀 더 심화 과정인 이미지 노이즈 제거에 대해서 알아보고 1장을 마무리 하도록 하겠습니다.
+
+출처 : Solem, J.E. (no date) Programming Computer Vision with python, Programming Computer Vision with Python. Available at: http://programmingcomputervision.com/ (Accessed: December 7, 2022). 
